@@ -41,7 +41,8 @@
       <section class="catalog-products">
         <h2 class="visually-hidden">Список вариантов с фильтрами</h2>
         <h3 class="catalog-title">Инфраструктура:</h3>
-        <form action="https://echo.htmlacademy.ru/" method="post">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="catalog-filter-group">
         <ul class="catalog-items">
           <li class="catalog-item">
             <label class="checkbox-select">
@@ -93,17 +94,20 @@
           <label>
             <input type="range" min="1" max="100" value="80">
           </label>
+          </fieldset>
         </form>
         <button class="submit" type="submit" value="Применить">Применить</button>
         <button class="reset" type="reset" value="Сбросить">Сбросить</button>
       </section>
       <section class="products-results">
         <h2 class="results-title">Найдено гостиниц: 38</h2>
-        <form action="//echo.htmlacademy.ru/" method="post">
+        <form class="price-filter" action="//echo.htmlacademy.ru/" method="post">
+          <fieldset class="price-filter-group">
            <select name="price-type">
             <option value="Сначала дешёвые">Сначала дешёвые</option>
             <option value="Сначала дорогие">Сначала дорогие</option>
            </select>
+          </fieldset>
         </form>
         <button class="range"><img src="#" alt="Плиткой"></button>
         <button class="range"><img src="#" alt="На весь экран"></button>
@@ -116,7 +120,7 @@
             <p class="results-item-price">от 4000 ₽</p>
             <button class="results-item-button">Подробнее</button>
             <button class="results-item-button-like">В избранное</button>
-            <img class="star-rating" src="#" alt="4 звезды">
+            <img class="star-rating good-rating" src="#" alt="4 звезды">
             <span class="rating">Рейтинг: 8,5</span>
           </li>
           <li class="results-item">
@@ -126,7 +130,7 @@
             <p class="results-item-price">От 5000 ₽</p>
             <button class="results-item-button">Подробнее</button>
             <button class="results-item-button-like-active">В избранном</button>
-            <img class="star-rating" src="#" alt="4 звезды">
+            <img class="star-rating good-rating" src="#" alt="4 звезды">
             <span class="rating">Рейтинг: 9,2</span>
           </li>
           <li class="results-item">
@@ -136,7 +140,7 @@
             <p class="results-item-price">От 2500 ₽</p>
             <button class="results-item-button">Подробнее</button>
             <button class="results-item-button-like">В избранное</button>
-            <img class="star-rating" src="#" alt="3 звезды">
+            <img class="star-rating middle-rating" src="#" alt="3 звезды">
             <span class="rating">Рейтинг: 6,9</span>
           </li>
           <li class="results-item">
@@ -146,7 +150,7 @@
             <p class="results-item-price">От 1500 ₽</p>
             <button class="results-item-button">Подробнее</button>
             <button class="results-item-button-like">В избранное</button>
-            <img class="star-rating" src="#" alt="2 звезды">
+            <img class="star-rating bad-rating" src="#" alt="2 звезды">
             <span class="rating">Рейтинг: 5,0</span>
           </li>
         </ul>
