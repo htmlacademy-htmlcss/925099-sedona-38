@@ -1,0 +1,54 @@
+body {
+  background-color: lightblue;
+}
+
+.head-search {
+  background-image: url('../images/navigation/Поиск.svg');
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.favorite {
+  background-image: url('../images/navigation/heart.svg');
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.social-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.social-link-vk {
+  background-image: url('../images/social_svg/social-vk.svg');
+}
+
+.social-link-tg {
+  background-image: url('../images/social_svg/social-telegram.svg');
+}
+
+.social-link-yt {
+  background-image: url('../images/social_svg/social-youtube.svg');
+}
+
+.site-link-academy {
+  background-image: url('../images/social_svg/logo_htmlacademy.svg');
+  display: inline-block;
+  width: 115px;
+  height: 33px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
