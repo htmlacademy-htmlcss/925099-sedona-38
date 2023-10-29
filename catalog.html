@@ -7,13 +7,11 @@
   </head>
   <body>
     <header class="page-header">
+      <a class="navigation-logo" href="index.html">
+        <img class="main-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Sedona">
+      </a>
       <nav class="header-navigation">
         <ul class="navigation-list nobullet">
-          <li class="navigation-item navigation-item-img">
-            <a class="navigation-logo" href="index.html">
-              <img class="main-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Sedona">
-            </a>
-          </li>
           <li class="navigation-item">
               <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
@@ -56,8 +54,8 @@
                 <a class="inner-item-current" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
-            <div class="catalog-products-container">
               <h2 class="visually-hidden">Список вариантов с фильтрами</h2>
+              <div class="catalog-filter-container">
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
                 <fieldset class="catalog-filter-group">
                   <h3 class="catalog-title">Инфраструктура:</h3>
@@ -108,22 +106,26 @@
                 <div class="price-range-container">
                 <fieldset class="price-range">
                   <h3 class="catalog-title">Стоимость, ₽:</h3>
+                  <div class="price-div">
                   <label class="price-value">
                     <input class="price-range-value" type="text" name="price-from" placeholder="от" value="0">
                   </label>
                   <label class="price-value">
                     <input class="price-range-value" type="text" name="price-to" placeholder="до" value="9000">
                   </label>
+                  </div>
                   <label class="price-range">
                     <input class="price-range-change" type="range" min="1" max="100" value="80">
                   </label>
                 </fieldset>
+                </div>
+                <div class="submit-container">
                 <button class="submit" type="submit" value="Применить">Применить</button>
-                 <button class="reset" type="reset" value="Сбросить">Сбросить</button>
+                <button class="reset" type="reset" value="Сбросить">Сбросить</button>
                 </div>
               </form>
              </div>
-          </div>
+           </div>
         </section>
       <section class="products-results">
         <div class="results-container">
@@ -155,7 +157,7 @@
       </div>
         <ul class="results-list nobullet">
           <li class="results-item">
-            <img src="images/catalog_hotels/Amara_Resort.jpg" width="300" height="212" alt="Пещера на фоне звёздного неба">
+            <img class="results-img" src="images/catalog_hotels/Amara_Resort.jpg" width="300" height="212" alt="Пещера на фоне звёздного неба">
             <h3 class="results-item-title">Amara Resort & Spa</h3>
             <p class="results-item-description">Гостиница</p>
             <b class="results-item-price">от 4000 ₽</b>
@@ -170,7 +172,7 @@
             <span class="rating">Рейтинг: 8,5</span>
           </li>
           <li class="results-item">
-            <img src="images/catalog_hotels/Villas.jpg" width="300" height="212" alt="Горы на фоне радуги">
+            <img class="results-img" src="images/catalog_hotels/Villas.jpg" width="300" height="212" alt="Горы на фоне радуги">
             <h3 class="results-item-title">Villas at Poco Diablo</h3>
             <p class="results-item-description">Гостиница</p>
             <b class="results-item-price">От 5000 ₽</b>
@@ -185,7 +187,7 @@
             <span class="rating">Рейтинг: 9,2</span>
           </li>
           <li class="results-item">
-            <img src="/images/catalog_hotels/Desert.jpg" width="300" height="212" alt="Гора на фоне ясного неба">
+            <img class="results-img" src="/images/catalog_hotels/Desert.jpg" width="300" height="212" alt="Гора на фоне ясного неба">
             <h3 class="results-item-title">Desert Quail Inn</h3>
             <p class="results-item-description">Гостиница</p>
             <b class="results-item-price">От 2500 ₽</b>
@@ -199,7 +201,7 @@
             <span class="rating">Рейтинг: 6,9</span>
           </li>
           <li class="results-item">
-            <img src="/images/catalog_hotels/GreenTree.jpg" width="300" height="212" alt="Горы на фоне ночного неба">
+            <img class="results-img" src="/images/catalog_hotels/GreenTree.jpg" width="300" height="212" alt="Горы на фоне ночного неба">
             <h3 class="results-item-title">GreenTree Inn</h3>
             <p class="results-item-description">Гостиница</p>
             <b class="results-item-price">От 1500 ₽</b>
@@ -226,22 +228,26 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-item" href="#">...</a>
+            <a class="pagination-link dotted" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
       </section>
-      <section class="mailing-main catalog">
-        <h2 class="mailing-title">Подпишитесь на рассылку</h2>
-        <p class="mailing-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru/" method="post">
-            <label>
-            <input class="mailing-placeholder" type="text" name="subscribe" placeholder="Ваш e-mail">
-             </label>
-            <button class="mailing-button" type="submit" value="Отправить">Подписаться</button>
-        </form>
+      <section class="mailing-main catalog-mailing">
+        <div class="mailing-container  ">
+          <div class="mailing-container-description">
+          <h2 class="mailing-title">Подпишитесь на рассылку</h2>
+          <p class="mailing-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          </div>
+          <form class="mailing-action" action="https://echo.htmlacademy.ru/" method="post">
+              <label>
+              <input class="mailing-placeholder catalog-mailing-placeholder" type="text" name="subscribe" placeholder="Ваш e-mail">
+               </label>
+              <button class="mailing-button" type="submit" value="Отправить"><span class="mailing-button-description">Подписаться</span></button>
+          </form>
+        </div>
     </section>
     </main>
     <footer class="main-footer">

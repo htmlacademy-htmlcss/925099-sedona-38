@@ -25,7 +25,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   color: #000;
-  background-color: #ffffff;
+  background-color: #E5E5E5;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -44,7 +44,10 @@ body {
   align-items: center;
   position: relative;
   z-index: 2;
-  padding: 0 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 0;
+  background-color: #ffffff;
 }
 
 .header-navigation {
@@ -53,20 +56,21 @@ body {
   flex-grow: 1;
   justify-content: space-between;
   margin: 0 auto;
-  width: 1060px;
-  height: 70px;
+  padding: 0;
+  width: 1200px;
+  height: 64px;
+
 }
 
 .navigation-logo {
     display: block;
-    margin-bottom: -6px;
-    position: relative;
+    position: absolute;
     z-index: 2;
 }
 
 .navigation-list {
   margin: 0;
-  padding: 0;
+  padding-left: 170px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -94,6 +98,8 @@ body {
   display: flex;
   align-items: center;
   max-width: 268px;
+  margin: 0;
+  padding: 0;
   margin-left: auto;
 }
 
@@ -124,7 +130,14 @@ body {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .head-account {
@@ -162,19 +175,12 @@ body {
   flex-grow: 1;
 }
 
-.main-logo {
-  display: block;
-  margin-bottom: -6px;
-  position: relative;
-  z-index: 2;
-}
-
 .main-title-background {
   display: block;
   width: 1200px;
   height: 485px;
   padding-top: 51px;
-  margin: 0 auto;
+
   justify-content: center;
   background-image: url('../images/background/main-background.jpg');
   color: #ffffff;
@@ -185,19 +191,23 @@ body {
   z-index: 1;
 }
 
+*{
+box-sizing: border-box;
+}
+
 
 
 .main-title-img-1 {
-  margin-top: 51px;
-  margin-left: 371px;
-  margin-bottom: 82px;
+  display: block;
+  margin: 0 auto;
 }
 
 
 .promo {
-  margin-bottom: 21px;
+  margin: 0;
   padding: 69px 274px;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .promo-title {
@@ -223,12 +233,46 @@ body {
 }
 
 .advantages-item {
+  position: relative;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-promo {
   padding: 103px 85px;
+  height: 100%;
+}
+
+.advantages-promo-part {
+  width: 33.3%;
+}
+
+.advantages-sedona-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 66.6;
+  object-fit: cover;
+}
+
+.advantages-sedona-2 {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.advantages-promo-part-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 33.3%;
+  padding: 103px 85px;
+}
+
+.last-img {
+  width: 100%;
 }
 
 .advantages-title {
@@ -237,6 +281,17 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.advantages-description {
+  margin: 0;
+}
+
+.advantages-img {
+  width: 100%;
+  position: relative;
 }
 
 .background {
@@ -252,24 +307,27 @@ body {
   background-color: #e6f0f6;
 }
 
+.background-white {
+  background-color: #ffffff;
+}
 
 .services-description-1 {
+  margin: 0;
   padding: 64px 347px;
   text-align: center;
+  background-color:#ffffff
 }
 
 .services-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
   margin: 0;
   padding: 0;
   text-align: center;
-  height: 385px;
 }
 
 .services-item {
-  padding-top: 30px;
+  padding-top: 80px;
   padding-left: 85px;
   padding-bottom: 80px;
   padding-right: 85px;
@@ -322,6 +380,7 @@ body {
 .search {
   padding: 96px 304px;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .search-title {
@@ -355,31 +414,53 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
-
+  background-color: #ffffff;
 }
 
 .mailing-container {
-  padding-top: 96px;
-  padding-left: 258px;
-  padding-right: 258px;
-  padding-bottom: 104px;
+  width: 1200px;
+  min-height: 415px;
+  margin: 0;
+  padding: 0;
 }
+
+.mailing-container-description {
+  display: inline-block;
+  width: 475px;
+  text-align: center;
+}
+
 
 .mailing-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
+  padding-top: 96px;
+  padding-bottom: 20px;
+  margin: 0;
 }
 
 .mailing-description {
+  margin: 0;
+  padding-top: 0;
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
+}
+
+.mailing-action {
+  display: flex;
+  justify-content: center;
+  padding-top: 54px;
 }
 
 .mailing-placeholder {
   width: 452px;
   height: 52px;
+  border: 0;
+  border-radius: 4px 0 0 4px;
 }
 
 .mailing-button {
@@ -391,6 +472,13 @@ body {
   background-color: #82b3d3;
   width: 232px;
   height: 52px;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.mailing-button-description {
+  margin: 0;
+  padding: 8px 32px;
 }
 
 /* конец индекса*/
@@ -412,7 +500,6 @@ body {
   justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
-  padding-top: 35px;
   padding-left: 70px;
   padding-right: 70px;
   padding-bottom: 70px;
@@ -422,6 +509,7 @@ body {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+  margin-top: 0;
   margin-bottom: 8px;
   margin-left: 70px;
 }
@@ -441,6 +529,8 @@ body {
   background-position: center;
   width: 12px;
   height: 12px;
+  margin: 0;
+  padding: 0;
 }
 
 .inner-arrow {
@@ -462,7 +552,6 @@ body {
 
 .catalog-filter {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -471,10 +560,12 @@ body {
   justify-content: space-between;
   margin-left: 70px;
   margin-right: 70px;
+  width: 1060px;
 }
 
 
 .catalog-title {
+  margin: 0;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -487,35 +578,48 @@ body {
 
 
 .catalog-items {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 23px;
+}
+
+.radio-select {
+  white-space: nowrap;
 }
 
 .price-range-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 549px;
+  gap: 70px;
 
+  margin: 0;
+}
+
+.price-div {
+  display: flex;
+  border: none;
 }
 
 .price-range {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items:center;
-  border: none;
-
+  display: block;
+  width: 100%;
+  margin: 0;
+  border: 0;
 }
 
 .price-range-value {
-  display: flex;
-  justify-content: space-between;
   width: 143px;
   height: 48px;
-  margin-bottom: 36px;
+  margin: 0;
 }
 
+.submit-container {
+  display: flex;
+  justify-content: space-between;
+  width: 191px;
+}
 
 .submit {
   font-weight: 700;
@@ -541,16 +645,17 @@ body {
   padding: 8px 32px;
 }
 
-
+.products-results {
+  background-color: #ffffff
+}
 
 .results-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
-  margin-left: 70px;
-  margin-right: 70px;
-
+  padding: 50px;
+  padding-left: 70px;
+  pading-right: 70px;
 }
 
 .results-title {
@@ -598,6 +703,8 @@ body {
   padding: 0;
   padding-bottom: 40px;
   margin: 0;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .results-item {
@@ -678,7 +785,10 @@ body {
 .pagination {
   display: flex;
   gap: 8px;
-  padding: 0;
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 70px;
+  background-color: #ffffff;
 }
 
 .pagination-link {
@@ -703,21 +813,39 @@ body {
 }
 
 .pagination-link:last-child {
+  max-width: 60px;
+  max-height: 60px;
   padding-top: 11.36px;
   padding-left: 18.45px;
   padding-bottom: 12.64px;
   padding-right: 18.55px;
 }
 
-.catalog {
-  margin-top: 96px;
-  margin-left: auto;
-  margin-bottom: 104px;
-  margin-right: auto;
-  background-image: none;
+.pagination-item {
+  position: relative;
+}
+
+.dotted {
+  background-color: #ffffff;
   color: #000;
 }
+
+
+.catalog-mailing {
+  color: #000;
+  background-image: none;
+}
+
+.catalog-mailing-placeholder{
+  background-color: #f2f2f2;
+}
+
+
 /* Footer*/
+
+.main-footer {
+  background-color: #ffffff;
+}
 
 .footer-container {
   display: flex;
@@ -725,20 +853,21 @@ body {
   align-items: center;
   width: 1060px;
   margin: 0 auto;
-  padding: 0 70px;
+  padding: 0;
   height: 120px;
 }
 
 .contacts-list {
   display: flex;
   width: 142px;
-  margin-right: auto;
+  margin:0;
   padding-left: 0;
 }
 
 
 .social-link {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
