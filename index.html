@@ -7,13 +7,11 @@
   </head>
   <body>
     <header class="page-header">
+      <a class="navigation-logo" href="index.html">
+        <img class="main-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Sedona">
+      </a>
       <nav class="header-navigation">
         <ul class="navigation-list nobullet">
-          <li class="navigation-item navigation-item-img">
-            <a class="navigation-logo" href="index.html">
-              <img class="main-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Sedona">
-            </a>
-          </li>
           <li class="navigation-item">
               <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
@@ -51,14 +49,12 @@
       <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages-list nobullet">
-              <li class="advantages-item background">
-                <div class="advantages-promo">
+              <li class="advantages-item background advantages-img">
+                <div class="advantages-promo advantages-promo-part">
                   <h3 class="advantages-title">Настоящий городок</h3>
-                  <p class="advantages-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+                  <p class="advantages-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
-              </li>
-              <li class="advantages-img">
-                <img src="images/advantages/Sedona-town.jpg" width="800" height="385" alt="Фотография города Седона">
+                <img class="advantages-sedona-1" src="images/advantages/Sedona-town.jpg" width="800" alt="Фотография города Седона">
               </li>
               </li>
               <li class="advantages-item background-light">
@@ -79,14 +75,12 @@
                   <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
                 </div>
               </li>
-              <li class="advantages-item background">
-                <div class="advantages-promo">
+              <li class="advantages-item last-img background">
+                <img class="advantages-sedona-2" src="images/advantages/diablo_bridge.jpg" width="800" alt="Фотография моста Дьявола">
+                <div class="advantages-promo-part-1">
                   <h3 class="advantages-title">Там есть <br>мост Дьявола</h3>
                   <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </div>
-              </li>
-              <li class="advantages-img">
-                <img src="images/advantages/diablo_bridge.jpg" width="800" height="385" alt="Фотография моста Дьявола">
               </li>
           </ul>
       </section>
@@ -103,7 +97,7 @@
                 <h3 class="services-item-description">Жильё</h3>
                 <p class="services-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li class="services-item">
+              <li class="services-item background-white">
                 <div class="food">
                   <span class="visually-hidden">Еда</span>
                 </div>
@@ -126,13 +120,15 @@
       </section>
       <section class="mailing-main index">
         <div class="mailing-container">
+          <div class="mailing-container-description">
           <h2 class="mailing-title">Подпишитесь на рассылку</h2>
           <p class="mailing-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form action="https://echo.htmlacademy.ru/" method="post">
+          </div>
+          <form class="mailing-action" action="https://echo.htmlacademy.ru/" method="post">
               <label>
               <input class="mailing-placeholder" type="text" name="subscribe" placeholder="Ваш e-mail">
                </label>
-              <button class="mailing-button" type="submit" value="Отправить">Подписаться</button>
+              <button class="mailing-button" type="submit" value="Отправить"><span class="mailing-button-description">Подписаться</span></button>
           </form>
         </div>
       </section>
