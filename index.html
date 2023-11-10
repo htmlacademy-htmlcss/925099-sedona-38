@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <a class="navigation-logo" href="index.html">
-        <img class="main-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Sedona">
+        <img class="main-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Sedona.">
       </a>
       <nav class="header-navigation">
         <ul class="navigation-list nobullet">
@@ -40,7 +40,7 @@
     <main class="main-title">
       <section class="main-title-background">
         <h1 class="visually-hidden">Sedona - лучший курорт в Аризоне.</h1>
-      <img class="main-title-img-1" src="images/welcome-Sedona.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+      <img class="main-title-img-1" src="images/welcome-Sedona.svg" width="458" height="352" alt="Добро пожаловать в Седону.">
       </section>
       <section class="promo">
           <h2 class="promo-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -54,8 +54,7 @@
                   <h3 class="advantages-title advantages-title-white">Настоящий городок</h3>
                   <p class="advantages-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
-                <img class="advantages-sedona-1" src="images/advantages/Sedona-town.jpg" width="800" alt="Фотография города Седона">
-              </li>
+                <img class="advantages-sedona-1" src="images/advantages/Sedona-town.jpg" width="800" alt="Фотография города Седона.">
               </li>
               <li class="advantages-item background-light">
                 <div class="advantages-promo">
@@ -76,7 +75,7 @@
                 </div>
               </li>
               <li class="advantages-item last-img background">
-                <img class="advantages-sedona-2" src="images/advantages/diablo_bridge.jpg" width="800" alt="Фотография моста Дьявола">
+                <img class="advantages-sedona-2" src="images/advantages/diablo_bridge.jpg" width="800" alt="Фотография моста Дьявола.">
                 <div class="advantages-promo-part-1">
                   <h3 class="advantages-title advantages-title-white">Там есть <br>мост Дьявола</h3>
                   <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -95,21 +94,21 @@
                   <span class="visually-hidden">Дом</span>
                 </div>
                 <h3 class="services-item-description">Жильё</h3>
-                <p class="services-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="services-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="services-item background-white">
                 <div class="food">
                   <span class="visually-hidden">Еда</span>
                 </div>
                 <h3 class="services-item-description">Еда</h3>
-                <p class="services-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                <p class="services-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="services-item background-light">
                 <div class="gift">
                   <span class="visually-hidden">Сувениры</span>
                 </div>
                 <h3 class="services-item-description">Сувениры</h3>
-                <p class="services-description">Не только китайского, но и настоящего местного производства!</p>
+                <p class="services-text">Не только китайского, но и настоящего местного производства!</p>
               </li>
           </ul>
       </section>
@@ -178,5 +177,72 @@
         </a>
      </div>
     </footer>
+    <section class="modal">
+      <div class="modal-inner">
+        <h2 class="visually-hidden">Форма поиска гостиницы в Седоне.</h2>
+        <div class="modal-top-wrap">
+          <p class="modal-title">Поиск гостиницы в Седоне</p>
+          <button class="modal-close-btn" type="button" aria-label="Кнопка закрытия модального окна."></button>
+        </div>
+        <form class="modal-form" method="post" action="https://echo.htmlacademy.ru/">
+          <div class="modal-row modal-row--date">
+            <label class="date-in-title modal-label" for="date-in">Дата Заезда:</label>
+            <input class="date-in-input modal-input" type="text" placeholder="27 апреля 2020" name="date-in" id="date-in">
+            <span class="modal-error">Мы не можем отправить вас в прошлое.</span>
+          </div>
+          <div class="modal-row modal-row--date">
+            <label class="date-out-title modal-label" for="date-out">Дата Выезда:</label>
+            <input class="date-out-input modal-input" type="text" name="date-out" id="date-out"
+              placeholder="1 сентября 2023">
+            <span class="modal-message">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <div class="modal-row modal-row--people">
+            <div class="modal-wrap modal-adults">
+              <label class="adults-title modal-label" for="adults">Взрослые:</label>
+              <div class="modal-number-wrap">
+                <button class="modal-minus" type="button" name="minus-adults" aria-label="Уменьшить количество взрослых.">
+                  <span class="icon-minus"></span>
+                </button>
+                <input class="adults-input modal-number-input" type="number" name="adults" id="adults" min="1" max="100"
+                  placeholder="2">
+                <button class="modal-plus" type="button" name="plus-adults" aria-label="Увеличить количество взрослых.">
+                  <span class="icon-plus"></span>
+                </button>
+              </div>
+            </div>
+            <div class="modal-wrap modal-children">
+              <div class="modal-notice">
+                <label class="modal-label" for="children">Дети:</label>
+                <p class="children-tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children"
+                    aria-label="Иконка дополнительной информации.">
+                    <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                      xmlns="http://www.w3.org/2000/svg" role="img">
+                      <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                        fill="white" />
+                    </svg>
+                  </button>
+                  <span class="children-tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
+                    которые будут с вами, возраст которых от 6 до 18 лет.
+                    Дети до 6 лет размещаются бесплатно.</span>
+                </p>
+              </div>
+              <div class="modal-number-wrap">
+                <button class="modal-minus" type="button" name="minus-children" aria-label="Уменьшить количество детей.">
+                  <span class="icon-minus"></span>
+                </button>
+                <input class="children-input modal-number-input" type="number" name="children" id="children" min="1"
+                  max="100" placeholder="2">
+                <button class="modal-plus" type="button" name="plus-children" aria-label="Увеличить количество детей.">
+                  <span class="icon-plus"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="modal-btn blue-button" type="submit">Найти</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>

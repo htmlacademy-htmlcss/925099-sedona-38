@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <a class="navigation-logo" href="index.html">
-        <img class="main-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Sedona">
+        <img class="main-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Sedona.">
       </a>
       <nav class="header-navigation">
         <ul class="navigation-list nobullet">
@@ -27,7 +27,7 @@
           <span class="visually-hidden">Поиск</span>
           <a class="button-search" href="#"></a>
         </li>
-        <li class="head-button">
+        <li class="head-button like">
           <span class="visually-hidden">Избранное</span>
           <a class="head-favorite" href="#"></a>
         </li>
@@ -55,55 +55,56 @@
               </li>
             </ul>
               <h2 class="visually-hidden">Список вариантов с фильтрами</h2>
-              <div class="catalog-filter-container">
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
-                <fieldset class="catalog-filter-group">
-                  <h3 class="catalog-title">Инфраструктура:</h3>
-                  <ul class="catalog-items nobullet">
-                    <li class="catalog-item-checkbox">
-                      <label class="checkbox-select">
-                        <input class="checkbox-catalog" type="checkbox" name="pool" checked>
-                        <span class="checkbox-text">Бассейн</span>
-                      </label>
-                    </li>
-                    <li class="catalog-item-checkbox">
-                      <label class="checkbox-select">
-                        <input class="checkbox-catalog" type="checkbox" name="parking" checked>
-                        <span class="checkbox-text">Парковка</span>
-                      </label>
-                    </li>
-                    <li class="catalog-item-checkbox">
-                      <label class="checkbox-select">
-                        <input class="checkbox-catalog" type="checkbox" name="WiFi">
-                        <span class="checkbox-text">Wi-Fi</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset class="catalog-filter-group">
-                  <h3 class="catalog-title">Тип Жилья:</h3>
-                  <ul class="catalog-items nobullet">
-                    <li class="catalog-item-radio">
-                      <label class="radio-select">
-                        <input class="radio-catalog" type="radio" name="Choice" value="Гостиница"  checked>
-                          <span class="radio-text">Гостиница</span>
-                      </label>
-                    </li>
-                    <li class="catalog-item-radio">
-                      <label class="radio-select">
-                        <input class="radio-catalog" type="radio" name="Choice" value="Мотель">
-                        <span class="radio-text">Мотель</span>
-                      </label>
-                    </li>
-                    <li class="catalog-item-radio">
-                      <label class="radio-select">
-                        <input class="radio-catalog" type="radio" name="Choice" value="Апартаменты">
-                        <span class="radio-text">Апартаменты</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <div class="price-range-container">
+                <div class="catalog-filter-block">
+                  <fieldset class="catalog-filter-group">
+                    <h3 class="catalog-title">Инфраструктура:</h3>
+                    <ul class="catalog-items nobullet">
+                      <li class="catalog-item-checkbox">
+                        <label class="checkbox-select">
+                          <input class="checkbox-catalog" type="checkbox" name="pool" checked>
+                          <span class="checkbox-text">Бассейн</span>
+                        </label>
+                      </li>
+                      <li class="catalog-item-checkbox">
+                        <label class="checkbox-select">
+                          <input class="checkbox-catalog" type="checkbox" name="parking" checked>
+                          <span class="checkbox-text">Парковка</span>
+                        </label>
+                      </li>
+                      <li class="catalog-item-checkbox">
+                        <label class="checkbox-select">
+                          <input class="checkbox-catalog" type="checkbox" name="WiFi">
+                          <span class="checkbox-text">Wi-Fi</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="catalog-filter-group">
+                    <h3 class="catalog-title">Тип Жилья:</h3>
+                    <ul class="catalog-items nobullet">
+                      <li class="catalog-item-radio">
+                        <label class="radio-select">
+                          <input class="radio-catalog" type="radio" name="Choice" value="Гостиница" checked>
+                            <span class="radio-text">Гостиница</span>
+                        </label>
+                      </li>
+                      <li class="catalog-item-radio">
+                        <label class="radio-select">
+                          <input class="radio-catalog" type="radio" name="Choice" value="Мотель">
+                          <span class="radio-text">Мотель</span>
+                        </label>
+                      </li>
+                      <li class="catalog-item-radio">
+                        <label class="radio-select">
+                          <input class="radio-catalog" type="radio" name="Choice" value="Апартаменты">
+                          <span class="radio-text">Апартаменты</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+                <div class="catalog-filter-block">
                 <fieldset class="price-range">
                   <h3 class="catalog-title">Стоимость, ₽:</h3>
                   <div class="price-div">
@@ -130,8 +131,8 @@
                 </fieldset>
                 </div>
                 <div class="submit-container">
-                <button class="submit" type="submit" value="Применить">Применить</button>
-                <button class="reset" type="reset" value="Сбросить">Сбросить</button>
+                  <button class="filter-button  submit" type="submit" value="Применить">Применить</button>
+                  <button class="filter-button  reset" type="reset" value="Сбросить">Сбросить</button>
                 </div>
               </form>
              </div>
@@ -152,33 +153,36 @@
         <ul class="products-view nobullet">
           <li class="products-view-item">
             <button class="products-view-button products-view-button-current">
-              <img src="images/buttons/tile.svg" width="16" height="14" alt="Отображение плитками">
+              <img src="images/buttons/tile.svg" width="16" height="14" alt="Отображение плитками.">
             </button>
           </li>
           <li class="products-view-item">
             <button class="products-view-button">
-              <img src="images/buttons/big-block.svg" width="16" height="14" alt="Одна карточка">
+              <img src="images/buttons/big-block.svg" width="16" height="14" alt="Одна карточка.">
             </button>
           </li>
           <li class="products-view-item">
             <button class="products-view-button">
-              <img src="images/buttons/list.svg" width="16" height="14" alt="Отображение списком">
+              <img src="images/buttons/list.svg" width="16" height="14" alt="Отображение списком.">
             </button>
           </li>
         </ul>
         </div>
       </div>
+      <h2 class="visually-hidden">Список вариантов гостниц</h2>
         <ul class="results-list nobullet">
           <li class="results-item">
-            <img class="results-img" src="images/catalog_hotels/Amara_Resort.jpg" width="300" height="212" alt="Пещера на фоне звёздного неба">
+            <a class="results-img-link">
+              <img class="results-img" src="images/catalog_hotels/Amara_Resort.jpg" width="300" height="212" alt="Пещера на фоне звёздного неба.">
+            </a>
             <h3 class="results-item-title">Amara Resort & Spa</h3>
             <div class="results-breadcrumbs">
               <p class="results-item-description">Гостиница</p>
               <b class="results-item-price">от 4000 ₽</b>
             </div>
             <div class="breadcrumbs-button">
-              <button class="results-item-button">Подробнее</button>
-              <button class="results-item-button-like">В избранное</button>
+              <button class="results-item-button" aria-label="Кнопка Подробнее">Подробнее</button>
+              <button class="results-item-button-like" aria-label="Кнопка В Избранное">В избранное</button>
             </div>
             <div class="rating-breadcrumbs">
               <div class="rating-stars">
@@ -191,15 +195,17 @@
             </div>
           </li>
           <li class="results-item">
-            <img class="results-img" src="images/catalog_hotels/Villas.jpg" width="300" height="212" alt="Горы на фоне радуги">
+            <a class="results-img-link">
+              <img class="results-img" src="images/catalog_hotels/Villas.jpg" width="300" height="212" alt="Горы на фоне радуги.">
+            </a>
             <h3 class="results-item-title">Villas at Poco Diablo</h3>
             <div class="results-breadcrumbs">
               <p class="results-item-description">Гостиница</p>
               <b class="results-item-price">От 5000 ₽</b>
             </div>
             <div class="breadcrumbs-button">
-              <button class="results-item-button">Подробнее</button>
-              <button class="results-item-button-like-active">В избранном</button>
+              <button class="results-item-button" aria-label="Кнопка Подробнее" >Подробнее</button>
+              <button class="results-item-button-like-active" aria-label="Вариант в Избранном">В избранном</button>
             </div>
             <div class="rating-breadcrumbs">
               <div class="rating-stars">
@@ -212,15 +218,17 @@
             </div>
           </li>
           <li class="results-item">
-            <img class="results-img" src="/images/catalog_hotels/Desert.jpg" width="300" height="212" alt="Гора на фоне ясного неба">
+            <a class="results-img-link">
+              <img class="results-img" src="/images/catalog_hotels/Desert.jpg" width="300" height="212" alt="Гора на фоне ясного неба.">
+            </a>
             <h3 class="results-item-title">Desert Quail Inn</h3>
             <div class="results-breadcrumbs">
               <p class="results-item-description">Гостиница</p>
               <b class="results-item-price">От 2500 ₽</b>
             </div>
             <div class="breadcrumbs-button">
-              <button class="results-item-button">Подробнее</button>
-              <button class="results-item-button-like">В избранное</button>
+              <button class="results-item-button" aria-label="Кнопка Подробнее">Подробнее</button>
+              <button class="results-item-button-like" aria-label="Кнопка В Избранное">В избранное</button>
             </div>
             <div class="rating-breadcrumbs">
               <div class="rating-stars">
@@ -232,15 +240,17 @@
             </div>
           </li>
           <li class="results-item">
-            <img class="results-img" src="/images/catalog_hotels/GreenTree.jpg" width="300" height="212" alt="Горы на фоне ночного неба">
+            <a class="results-img-link">
+              <img class="results-img" src="/images/catalog_hotels/GreenTree.jpg" width="300" height="212" alt="Горы на фоне ночного неба.">
+            </a>
             <h3 class="results-item-title">GreenTree Inn</h3>
             <div class="results-breadcrumbs">
               <p class="results-item-description">Гостиница</p>
               <b class="results-item-price">От 1500 ₽</b>
             </div>
             <div class="breadcrumbs-button">
-              <button class="results-item-button">Подробнее</button>
-              <button class="results-item-button-like">В избранное</button>
+              <button class="results-item-button" aria-label="Кнопка Подробнее">Подробнее</button>
+              <button class="results-item-button-like" aria-label="Кнопка В Избранное">В избранное</button>
             </div>
             <div class="rating-breadcrumbs">
               <div class="rating-stars">
