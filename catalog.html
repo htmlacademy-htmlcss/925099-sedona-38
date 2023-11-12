@@ -18,8 +18,8 @@
           <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
           </li>
-          <li class="navigation-item navigation-link-catalog">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          <li class="navigation-item ">
+            <a class="navigation-link navigation-link-catalog" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       <ul class="head-items nobullet">
@@ -43,15 +43,12 @@
           <h2 class="inner-title">Гостиницы Седоны</h2>
             <ul class="inner-nav nobullet">
               <li class="inner-item">
-                <a class="inner-item-home" href="index.html">
+                <a class="inner-link  inner-item-home" href="index.html">
                   <span class="visually-hidden">Главная страница</span>
                 </a>
               </li>
               <li class="inner-item">
-                <span class="inner-arrow"></span>
-              </li>
-              <li class="inner-item">
-                <a class="inner-item-current" href="catalog.html">Гостиницы</a>
+                <a class="inner-link inner-item-current" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
               <h2 class="visually-hidden">Список вариантов с фильтрами</h2>
@@ -109,24 +106,24 @@
                   <h3 class="catalog-title">Стоимость, ₽:</h3>
                   <div class="price-div">
                     <div class="price-value-container">
-                        <label class="price-value">
+                        <div class="price-value">
                           <input class="price-range-value left" type="text" name="price-from" value="0">
                           <label class="price-range-name">от</label>
-                        </label>
+                        </div>
                     </div>
                     <div class="price-value-container">
-                      <label class="price-value">
+                      <div class="price-value">
                         <input class="price-range-value right" type="text" name="price-to" value="9000">
                         <label class="price-range-name">до</label>
-                      </label>
+                      </div>
                    </div>
                   </div>
                   <div class="price-range-layout">
                     <div class="left-layout">
                       <div class="basic-layout"></div>
                     </div>
-                    <div class="layout-toggle layout-toggle-min"></div>
-                    <div class="layout-toggle layout-toggle-max"></div>
+                    <button class="layout-toggle layout-toggle-min"></button>
+                    <button class="layout-toggle layout-toggle-max"></button>
                   </div>
                 </fieldset>
                 </div>
@@ -136,8 +133,6 @@
                 </div>
               </form>
              </div>
-           </div>
-          </div>
         </section>
       <section class="products-results">
         <div class="results-container">
@@ -149,7 +144,6 @@
             <option value="Сначала дорогие">Сначала дорогие</option>
            </select>
           </div>
-        </form>
         <ul class="products-view nobullet">
           <li class="products-view-item">
             <button class="products-view-button products-view-button-current">
@@ -172,10 +166,12 @@
       <h2 class="visually-hidden">Список вариантов гостниц</h2>
         <ul class="results-list nobullet">
           <li class="results-item">
-            <a class="results-img-link">
+            <a class="results-img-link" href="#">
               <img class="results-img" src="images/catalog_hotels/Amara_Resort.jpg" width="300" height="212" alt="Пещера на фоне звёздного неба.">
             </a>
-            <h3 class="results-item-title">Amara Resort & Spa</h3>
+            <a class="results-tltle-link" href="#">
+              <h3 class="results-item-title">Amara Resort & Spa</h3>
+            </a>
             <div class="results-breadcrumbs">
               <p class="results-item-description">Гостиница</p>
               <b class="results-item-price">от 4000 ₽</b>
@@ -195,10 +191,12 @@
             </div>
           </li>
           <li class="results-item">
-            <a class="results-img-link">
+            <a class="results-img-link" href="#" tabindex="-1">
               <img class="results-img" src="images/catalog_hotels/Villas.jpg" width="300" height="212" alt="Горы на фоне радуги.">
             </a>
-            <h3 class="results-item-title">Villas at Poco Diablo</h3>
+            <a class="results-tltle-link" href="#" tabindex="-1">
+              <h3 class="results-item-title">Villas at Poco Diablo</h3>
+            </a>
             <div class="results-breadcrumbs">
               <p class="results-item-description">Гостиница</p>
               <b class="results-item-price">От 5000 ₽</b>
@@ -218,10 +216,12 @@
             </div>
           </li>
           <li class="results-item">
-            <a class="results-img-link">
+            <a class="results-img-link" href="#" tabindex="-1">
               <img class="results-img" src="/images/catalog_hotels/Desert.jpg" width="300" height="212" alt="Гора на фоне ясного неба.">
             </a>
-            <h3 class="results-item-title">Desert Quail Inn</h3>
+            <a class="results-tltle-link" href="#" tabindex="-1">
+              <h3 class="results-item-title">Desert Quail Inn</h3>
+            </a>
             <div class="results-breadcrumbs">
               <p class="results-item-description">Гостиница</p>
               <b class="results-item-price">От 2500 ₽</b>
@@ -240,10 +240,12 @@
             </div>
           </li>
           <li class="results-item">
-            <a class="results-img-link">
+            <a class="results-img-link" href="#" tabindex="-1">
               <img class="results-img" src="/images/catalog_hotels/GreenTree.jpg" width="300" height="212" alt="Горы на фоне ночного неба.">
             </a>
-            <h3 class="results-item-title">GreenTree Inn</h3>
+            <a class="results-tltle-link" href="#" tabindex="-1">
+              <h3 class="results-item-title">GreenTree Inn</h3>
+            </a>
             <div class="results-breadcrumbs">
               <p class="results-item-description">Гостиница</p>
               <b class="results-item-price">От 1500 ₽</b>
@@ -292,7 +294,7 @@
               <label>
               <input class="mailing-placeholder catalog-mailing-placeholder" type="text" name="subscribe" placeholder="Ваш e-mail">
                </label>
-              <button class="mailing-button" type="submit" value="Отправить"><span class="mailing-button-description">Подписаться</span></button>
+              <button class="mailing-button" type="submit" value="Отправить">Подписаться</button>
           </form>
         </div>
     </section>
@@ -342,5 +344,72 @@
         </a>
      </div>
     </footer>
+    <section class="modal">
+      <div class="modal-inner">
+        <h2 class="visually-hidden">Форма поиска гостиницы в Седоне.</h2>
+        <div class="modal-top-wrap">
+          <p class="modal-title">Поиск гостиницы в Седоне</p>
+          <button class="modal-close-btn" type="button" aria-label="Кнопка закрытия модального окна."></button>
+        </div>
+        <form class="modal-form" method="post" action="https://echo.htmlacademy.ru/">
+          <div class="modal-row modal-row--date">
+            <label class="date-in-title modal-label" for="date-in">Дата Заезда:</label>
+            <input class="date-in-input modal-input" type="text" placeholder="27 апреля 2020" name="date-in" id="date-in">
+            <span class="modal-error">Мы не можем отправить вас в прошлое.</span>
+          </div>
+          <div class="modal-row modal-row--date">
+            <label class="date-out-title modal-label" for="date-out">Дата Выезда:</label>
+            <input class="date-out-input modal-input" type="text" name="date-out" id="date-out"
+              placeholder="1 сентября 2023">
+            <span class="modal-message">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <div class="modal-row modal-row--people">
+            <div class="modal-wrap modal-adults">
+              <label class="adults-title modal-label" for="adults">Взрослые:</label>
+              <div class="modal-number-wrap">
+                <button class="modal-minus" type="button" name="minus-adults" aria-label="Уменьшить количество взрослых.">
+                  <span class="icon-minus"></span>
+                </button>
+                <input class="adults-input modal-number-input" type="number" name="adults" id="adults" min="1" max="100"
+                  placeholder="2">
+                <button class="modal-plus" type="button" name="plus-adults" aria-label="Увеличить количество взрослых.">
+                  <span class="icon-plus"></span>
+                </button>
+              </div>
+            </div>
+            <div class="modal-wrap modal-children">
+              <div class="modal-notice">
+                <label class="modal-label" for="children">Дети:</label>
+                <p class="children-tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children"
+                    aria-label="Иконка дополнительной информации.">
+                    <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                      xmlns="http://www.w3.org/2000/svg" role="img">
+                      <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                        fill="white" />
+                    </svg>
+                  </button>
+                  <span class="children-tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
+                    которые будут с вами, возраст которых от 6 до 18 лет.
+                    Дети до 6 лет размещаются бесплатно.</span>
+                </p>
+              </div>
+              <div class="modal-number-wrap">
+                <button class="modal-minus" type="button" name="minus-children" aria-label="Уменьшить количество детей.">
+                  <span class="icon-minus"></span>
+                </button>
+                <input class="children-input modal-number-input" type="number" name="children" id="children" min="1"
+                  max="100" placeholder="2">
+                <button class="modal-plus" type="button" name="plus-children" aria-label="Увеличить количество детей.">
+                  <span class="icon-plus"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="modal-btn blue-button" type="submit">Найти</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
