@@ -2,11 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico">
     <title>HTML Academy: Седона, Каталог</title>
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <div class="main-wrapper">
+    <header class="page-header" data-test="header">
       <a class="navigation-logo" href="index.html">
         <img class="main-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Sedona.">
       </a>
@@ -37,8 +39,8 @@
       </ul>
       </nav>
     </header>
-    <main class="catalog-main">
-      <section class="catalog-products">
+    <main class="catalog-main" data-test="main">
+      <section class="catalog-products" data-test="filter">
         <div class="catalog-background-container">
           <h2 class="inner-title">Гостиницы Седоны</h2>
             <ul class="inner-nav nobullet">
@@ -134,7 +136,7 @@
               </form>
              </div>
         </section>
-      <section class="products-results">
+      <section class="products-results" data-test="catalog">
         <div class="results-container">
         <h2 class="results-title">Найдено гостиниц: 38</h2>
         <div class="price-filter-container">
@@ -146,18 +148,15 @@
           </div>
         <ul class="products-view nobullet">
           <li class="products-view-item">
-            <button class="products-view-button products-view-button-current">
-              <img src="images/buttons/tile.svg" width="16" height="14" alt="Отображение плитками.">
+            <button class="products-view-button products-view-button-current tile">
             </button>
           </li>
           <li class="products-view-item">
-            <button class="products-view-button">
-              <img src="images/buttons/big-block.svg" width="16" height="14" alt="Одна карточка.">
+            <button class="products-view-button big-block">
             </button>
           </li>
           <li class="products-view-item">
-            <button class="products-view-button">
-              <img src="images/buttons/list.svg" width="16" height="14" alt="Отображение списком.">
+            <button class="products-view-button list">
             </button>
           </li>
         </ul>
@@ -167,14 +166,14 @@
         <ul class="results-list nobullet">
           <li class="results-item">
             <a class="results-img-link" href="#">
-              <img class="results-img" src="images/catalog_hotels/Amara_Resort.jpg" width="300" height="212" alt="Пещера на фоне звёздного неба.">
+              <img class="results-img" src="images/catalog_hotels/amara_resort.jpg" width="300" height="212" alt="Пещера на фоне звёздного неба.">
             </a>
             <a class="results-tltle-link" href="#">
               <h3 class="results-item-title">Amara Resort & Spa</h3>
             </a>
             <div class="results-breadcrumbs">
               <p class="results-item-description">Гостиница</p>
-              <b class="results-item-price">от 4000 ₽</b>
+              <b class="results-item-price">От 4000 ₽</b>
             </div>
             <div class="breadcrumbs-button">
               <button class="results-item-button" aria-label="Кнопка Подробнее">Подробнее</button>
@@ -192,7 +191,7 @@
           </li>
           <li class="results-item">
             <a class="results-img-link" href="#" tabindex="-1">
-              <img class="results-img" src="images/catalog_hotels/Villas.jpg" width="300" height="212" alt="Горы на фоне радуги.">
+              <img class="results-img" src="images/catalog_hotels/villas.jpg" width="300" height="212" alt="Горы на фоне радуги.">
             </a>
             <a class="results-tltle-link" href="#" tabindex="-1">
               <h3 class="results-item-title">Villas at Poco Diablo</h3>
@@ -217,7 +216,7 @@
           </li>
           <li class="results-item">
             <a class="results-img-link" href="#" tabindex="-1">
-              <img class="results-img" src="/images/catalog_hotels/Desert.jpg" width="300" height="212" alt="Гора на фоне ясного неба.">
+              <img class="results-img" src="/images/catalog_hotels/desert.jpg" width="300" height="212" alt="Гора на фоне ясного неба.">
             </a>
             <a class="results-tltle-link" href="#" tabindex="-1">
               <h3 class="results-item-title">Desert Quail Inn</h3>
@@ -241,7 +240,7 @@
           </li>
           <li class="results-item">
             <a class="results-img-link" href="#" tabindex="-1">
-              <img class="results-img" src="/images/catalog_hotels/GreenTree.jpg" width="300" height="212" alt="Горы на фоне ночного неба.">
+              <img class="results-img" src="/images/catalog_hotels/green-tree.jpg" width="300" height="212" alt="Горы на фоне ночного неба.">
             </a>
             <a class="results-tltle-link" href="#" tabindex="-1">
               <h3 class="results-item-title">GreenTree Inn</h3>
@@ -284,7 +283,7 @@
           </li>
         </ul>
       </section>
-      <section class="mailing-main catalog-mailing">
+      <section class="mailing-main catalog-mailing" data-test="subscribe">
         <div class="mailing-container  ">
           <div class="mailing-container-description">
           <h2 class="mailing-title">Подпишитесь на рассылку</h2>
@@ -299,7 +298,7 @@
         </div>
     </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="footer">
       <div class="footer-container">
         <h2 class="visually-hidden">Контакты</h2>
           <ul class="contacts-list nobullet">
@@ -344,6 +343,7 @@
         </a>
      </div>
     </footer>
+    </div>
     <section class="modal">
       <div class="modal-inner">
         <h2 class="visually-hidden">Форма поиска гостиницы в Седоне.</h2>
